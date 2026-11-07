@@ -1,6 +1,6 @@
 .theme-dark{
     .guilds_pog62O{
-        width: 60px;
+        width: var(--custom-guild-list-width);
         background-color: transparent;
         // box-shadow: inset 0 0 0 1px $Green;
     }
@@ -39,27 +39,35 @@
         }
     }
 
-    // Guild icon
+    // Guild icon. Folder buttons are wider than a guild icon, so the list
+    // item stays at the bar width and the icon follows the current avatar size.
     .listItem_rwEpIL{
-        width: 44px;
-        // height: 44px;
-        margin-left: 8px;
-        // box-shadow: inset 0 0 0 1px $Red;
+        width: var(--custom-guild-list-width);
     }
     .wrapper_hqZPsU{
-        width: 44px !important; // Override inline
-        height: 44px !important; // Override inline
+        width: var(--guildbar-avatar-size) !important; // Override inline
+        height: var(--guildbar-avatar-size) !important; // Override inline
         border-radius: 4px;
         svg{
-            width: 44px;
-            height: 44px;
+            width: 100%;
+            height: 100%;
             top: 0;
             left: 0;
             .icon_JJ-hgR{
-                width: 36px;
+                width: 100%;
                 height: auto;
                 border-radius: 50%;
             }
+        }
+    }
+    // The four-up folder preview reuses the guild icon wrapper. Keep it inside
+    // the preview slot instead of the full avatar size.
+    .folderPreviewGuildIcon_RTMSuZ{
+        .wrapper_hqZPsU,
+        svg,
+        .icon_JJ-hgR{
+            width: 100% !important;
+            height: 100% !important;
         }
     }
     // Guild with no icon
@@ -161,20 +169,6 @@
         border-radius: 0;
         transition: none;
         font-weight: 400;
-    }
-
-    // Closed folder face. The preview of server icons is a separate layer now,
-    // so the glyph only replaces the folder icon and leaves that preview alone.
-    .folderIcon_RTMSuZ{
-        svg{
-            display: none;
-        }
-        &::before{
-            content: "\E8B7"; // Folder Open
-            @include FontIconFluent;
-            color: $TextOnAccentFillColorPrimary;
-            font-size: 20px;
-        }
     }
 
     // Unread notification bars

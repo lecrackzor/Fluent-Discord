@@ -1,8 +1,11 @@
 // Main UI transparency
 .theme-dark{
     .sidebar_pog62O, // channels
+    .sidebarList_pog62O,
+    .sidebarList_pog62O > *,
+    .sidebarList_pog62O [class*="scroller"],
     .container__2637a{ // channels
-        background-color: transparent;
+        background: transparent !important;
     }
 
     // Settings transparency
@@ -21,8 +24,10 @@
     // over the acrylic layer, so they have to be clear for that layer to show.
     .app_QbT-Jy,
     .page_pog62O,
-    .chatContent_z_gUBg{
-        background: transparent;
+    .chat_z_gUBg,
+    .chatContent_z_gUBg,
+    .splash_oEq_gK{
+        background: transparent !important;
     }
 
     // Background layers
