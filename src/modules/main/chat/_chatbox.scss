@@ -5,6 +5,9 @@
         padding-right: 15px;
     }
 
+    .inner_2x8-Qn{
+        align-items: center;
+    }
     .channelTextArea_2x8-Qn{
         --custom-channel-textarea-text-area-height: 44px;
         margin-bottom: 8px;
@@ -40,7 +43,9 @@
     // stretched the box and pushed the placeholder off center.
     .slateTextArea_q99V_-{
         color: $TextFillColorPrimary;
-        &.placeholder_SHcSVi {
+        .placeholder_SHcSVi{
+            top: 50%;
+            transform: translateY(-50%);
             color: $TextFillColorSecondary;
         }
     }
@@ -50,6 +55,10 @@
         padding: 0;
     }
     .attachButton_2x8-Qn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
         width: 32px;
         height: 32px;
         margin: 0 0 0 8px;
@@ -60,6 +69,7 @@
             color: $TextFillColorSecondary;
             @include FontIconFluent;
             font-size: 16px;
+            line-height: 1;
         }
         &:hover,
         &[aria-expanded=true]{
@@ -85,6 +95,10 @@
 
     // Button group within chatbox
     .buttons_2x8-Qn{
+        align-self: center;
+        position: relative;
+        top: auto;
+        height: auto;
         gap: 4px;
         // Remove the gift button
         // Nesting is updated *very* frequently, so try to catch as many configurations as possible
@@ -99,6 +113,7 @@
             margin-right: 4px;
         }
         .button_9OQtot{
+            align-self: center;
             height: 32px;
             width: 32px;
             border: 1px solid transparent;
@@ -106,6 +121,7 @@
                 color: $TextFillColorSecondary;
                 @include FontIconFluent;
                 font-size: 16px;
+                line-height: 1;
             }
             &:hover,
             &.active_hfM7yP,
