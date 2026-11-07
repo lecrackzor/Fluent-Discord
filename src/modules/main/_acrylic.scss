@@ -1,51 +1,28 @@
 // Main UI transparency
 .theme-dark{
-    // These panes paint their own opaque fill. The picture lives on .bg,
-    // so the panes have to be transparent for it to show through.
-    .content_pog62O,
-    .page_pog62O,
-    .layer_Fd0FEH,
-    .sidebar_pog62O,
-    .sidebarList_pog62O,
-    .scroller_Bce46W,
-    .chat_z_gUBg,
-    .chatContent_z_gUBg,
-    .guildSidebar_iar92T,
-    .containerSidenav_XtY2mm,
-    .contentPanel_XtY2mm,
-    .userSettingsContentPanel_XtY2mm,
-    .container_86es0b,
-    .members_86es0b,
-    .member_86es0b{
-        background-color: transparent !important;
+    .sidebar_pog62O, // channels
+    .container__2637a{ // channels
+        background-color: transparent;
     }
 
-    // Opaque color stops the Windows desktop showing through Legcord's mica window.
-    // The blurred theme picture sits on top of that color and behind the UI.
-    .app_QbT-Jy{
-        background-color: #202020 !important;
-        background-image: none !important;
-        &::before{
-            content: "";
-            position: absolute;
-            inset: -40px;
-            z-index: 0;
-            pointer-events: none;
-            background: var(--fluent-acrylic-background) center / cover no-repeat;
-            filter: #{"saturate(var(--fluent-acrylic-background-saturate))"} blur(var(--fluent-acrylic-background-blur));
-        }
-        &::after{
-            content: "";
-            position: absolute;
-            inset: 0;
-            z-index: 0;
-            pointer-events: none;
-            background: rgba(32, 32, 32, var(--fluent-acrylic-background-dimness));
-        }
+    // Settings transparency
+    .layer_Fd0FEH,
+    .standardSidebarView__23e6b,
+    .sidebarRegionScroller__23e6b,
+    .contentRegion__23e6b,
+    .contentRegionScroller__23e6b,
+    .containerSidenav_XtY2mm,
+    .contentPanel_XtY2mm,
+    .userSettingsContentPanel_XtY2mm{
+        background: transparent;
     }
-    .app_QbT-Jy > *{
-        position: relative;
-        z-index: 1;
+
+    // These shells did not exist when the theme was written. They paint
+    // over the acrylic layer, so they have to be clear for that layer to show.
+    .app_QbT-Jy,
+    .page_pog62O,
+    .chatContent_z_gUBg{
+        background: transparent;
     }
 
     // Background layers
@@ -57,10 +34,8 @@
     //    See: https://github.com/sass/libsass/issues/151#issuecomment-54477631
     .bg_Fd0FEH{
         margin-top: -10px; // Hides the black bar at top of titlebar (ie. grabber)
-        background-image: var(--fluent-acrylic-background) !important;
-        background-size: cover !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
+        background: var(--fluent-acrylic-background);
+        background-size: cover;
         filter: #{"saturate(var(--fluent-acrylic-background-saturate))"} blur(var(--fluent-acrylic-background-blur));
         &::before{
             content: "";
