@@ -196,10 +196,14 @@
         }
     }
 
-    // Loading chat content
-    .wrapper_d852db, // Loading container
-    .wrapper_oITdBA{ // Chat line item
-        background: transparent;
+    // Loading chat content. These shells use the dark chat color while a
+    // channel is opening, which shows up as a black box.
+    .wrapper_d852db,
+    .wrapper_gFyPwI,
+    .wrapper_oITdBA,
+    .chatContent_z_gUBg > [class*="messagesWrapper"],
+    .chatContent_z_gUBg > [class*="messagesWrapper"] > [class*="scroller"]{
+        background: transparent !important;
     }
 
     // Remove gradient at bottom of chat
