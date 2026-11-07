@@ -1,10 +1,10 @@
 .theme-dark{
-    .sidebar__5e434{
+    .sidebar_pog62O{
         &::after{
             display: none;
         }
     }
-    .sidebarList__5e434{
+    .sidebarList_pog62O{
         background-color: transparent;
         border: 0;
         border-radius: 0;
@@ -46,7 +46,7 @@
     .animatedBannerHoverLayer_f37cb1{
         display: none;
     }
-    .content_d125d2 > div[style="height: 84px;"]{
+    .content_tqapBM > div[style="height: 84px;"]{
         display: none;
     }
     .headerEllipseBackdrop_f37cb1,
@@ -102,7 +102,7 @@
         }
 
         // Category name
-        .container__13cf1{
+        .container_kRH1UI{
             color: $TextFillColorPrimary;
             @include TypeBody;
             text-transform: none;
@@ -324,7 +324,7 @@
     }
 
     // Unread badge
-    .numberBadge__2b1f5 {
+    .numberBadge_lMvXrQ {
         background-color: $SystemFillColorCritical !important; // For some reason this is in line
         @include TypeCaption;
         color: $TextOnAccentFillColorPrimary;
@@ -333,7 +333,7 @@
 
     // Unread bars
     .unread__629e4{
-        .bar__3b95d{
+        .bar_oJAkDB{
             background-color: $SystemFillColorCriticalBackground;
         }
         span{

@@ -5,7 +5,7 @@
 //     transform: unset !important;
 // }
 // Draw debug borders on top toolbar buttons
-// .toolbar__9293f{
+// .toolbar_ybUK7Z{
 //     border: 1px solid red;
 //     div[role=button],
 //     button[type=button]{
@@ -18,7 +18,7 @@
     border-radius: 8px 0 0 0;
 
     // Attach borders in call
-    ~ .content_f75fb0{
+    ~ .content_z_gUBg{
         border-radius: 0;
     }
 
@@ -40,8 +40,8 @@
     .buttonSection__1405b{
         border-radius: 4px;
     }
-    .attachedCaretButtonContainer_f1ceac{
-        .button__201d5[aria-label="More Options"]{
+    .attachedCaretButtonContainer_K9Xq13{
+        .button_9OQtot[aria-label="More Options"]{
             svg{
                 display: block !important;
             }
@@ -73,7 +73,7 @@
             }
         }
     }
-    .participantsButton__211d1{
+    .participantsButton_1uD6uZ{
         background-color: $ControlOnImageFillColorDefault;
         border: 1px solid $ControlStrokeColorDefault;
         &:hover{
@@ -87,8 +87,8 @@
 
 // Icon replacements
 // Top toolbar (excludes Inbox button)
-html[lang^="en-"].theme-dark .toolbar__9293f{
-    .button__201d5{
+html[lang^="en-"].theme-dark .toolbar_ybUK7Z{
+    .button_9OQtot{
         &::before{
             @include FontIconFluent;
             width: 62px;
@@ -106,7 +106,7 @@ html[lang^="en-"].theme-dark .toolbar__9293f{
 }
 // Bottom toolbar (mic/speaker mute, leave, activity buttons)
 // NOTE - 2023-03-07: Discord removed aria-label from activity and react buttons, so only remove default icons from buttons WITH an aria-label set
-html[lang^="en-"].theme-dark .wrapper__1405b .button__201d5[aria-label]{
+html[lang^="en-"].theme-dark .wrapper__1405b .button_9OQtot[aria-label]{
     &::before{
         @include FontIconFluent;
         width: 62px;

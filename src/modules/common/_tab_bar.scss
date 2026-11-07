@@ -2,13 +2,13 @@
     .tabBar__0b563,         // A: Guild > Channels & Roles
     .tabBar_b9fccc,         // B: User profile modal
     .tabBar_d6f9e9,         // C: User Settings > Profiles
-    .settingsTabBar_dc2e0e, // D: User Settings > Family Centre
+    .settingsTabBar_XtY2mm, // D: User Settings > Family Centre
     .tabBar__4efb4,         // E: Event information modal
-    .top_aa8da2{            // F: User Settings > Privacy & Safety
+    .top_6zZYhF{            // F: User Settings > Privacy & Safety
         border-bottom: 0;
 
         // Items
-        .item_aa8da2{
+        .item_6zZYhF{
             @include TypeBody;
             color: $TextFillColorPrimary;
             border: 0;
@@ -18,7 +18,7 @@
             &::after{
                 display: none;
             }
-            &.selected_aa8da2{
+            &.selected_6zZYhF{
                 border: 0;
                 &::before{
                     content: "";

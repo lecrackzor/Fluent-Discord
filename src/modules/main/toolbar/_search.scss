@@ -1,6 +1,6 @@
-.theme-dark .chat_f75fb0 .search__49676{
+.theme-dark .chat_z_gUBg .search_bWCaDq{
     margin: 0 4px 0 0;
-    .searchBar__97492{
+    .searchBar_i16Ad0{
         width: 60px;
         height: 32px;
         background-color: transparent;
@@ -17,16 +17,16 @@
             transition: background-color $AnimationFadeInOut;
         }
         .public-DraftEditorPlaceholder-root,
-        .icon__97492{
+        .icon_i16Ad0{
             display: none;
         }
-        .icon__97492{
+        .icon_i16Ad0{
             height: 24px;
         }
     }
 
     // Icon when not active
-    .search__97492:not(.focused__97492):not(.open__97492)::before{
+    .search_i16Ad0:not(.focused_i16Ad0):not(.open_i16Ad0)::before{
         content: "\e721"; // Search
         width: 60px;
         font-size: 16px;
@@ -37,9 +37,9 @@
         position: absolute;
     }
 
-    .search__97492.focused__97492 .searchBar__97492,
-    .search__97492.open__97492 .searchBar__97492,
-    .search__97492.popout-open .searchBar__97492{
+    .search_i16Ad0.focused_i16Ad0 .searchBar_i16Ad0,
+    .search_i16Ad0.open_i16Ad0 .searchBar_i16Ad0,
+    .search_i16Ad0.popout-open .searchBar_i16Ad0{
         width: 232px;
         height: 32px;
         margin: 0;
@@ -51,27 +51,27 @@
         border-radius: 4px;
         transition: width $AnimationSoftDismiss;
     }
-    .search__97492.focused__97492 .searchBar__97492{
+    .search_i16Ad0.focused_i16Ad0 .searchBar_i16Ad0{
         background-color: $ControlFillColorInputActiveBrush;
         border-color: $ControlStrokeColorDefault;
         border-bottom-color: $AccentBase;
     }
 
-    .search__97492.open__97492 .icon__97492,
-    .search__97492.focused__97492 .icon__97492{
+    .search_i16Ad0.open_i16Ad0 .icon_i16Ad0,
+    .search_i16Ad0.focused_i16Ad0 .icon_i16Ad0{
         width: 24px;
         height: 24px;
         display: block;
         padding: 4px 0 0 4px;
     }
-    .search__97492.open__97492 .searchBar__97492 .public-DraftEditorPlaceholder-root,
-    .search__97492.focused__97492 .searchBar__97492 .public-DraftEditorPlaceholder-root{
+    .search_i16Ad0.open_i16Ad0 .searchBar_i16Ad0 .public-DraftEditorPlaceholder-root,
+    .search_i16Ad0.focused_i16Ad0 .searchBar_i16Ad0 .public-DraftEditorPlaceholder-root{
         display: block;
     }
-    .search__97492 .DraftEditor-root .DraftEditor-editorContainer{
+    .search_i16Ad0 .DraftEditor-root .DraftEditor-editorContainer{
         height: 26px;
     }
-    .search__97492 .searchBar__97492 .DraftEditor-root{
+    .search_i16Ad0 .searchBar_i16Ad0 .DraftEditor-root{
         width: 100%;
         color: $TextFillColorPrimary;
         @include TypeBody;
@@ -85,7 +85,7 @@
         }
     }
     // Add margin to textarea when open/focused so text doesn't appear over the search/clear icon
-    .seasearch__97492rch .searchBar__97492 .public-DraftEditorPlaceholder-root{
+    .seasearch__97492rch .searchBar_i16Ad0 .public-DraftEditorPlaceholder-root{
         color: $TextFillColorSecondary;
         @include TypeBody;
     }

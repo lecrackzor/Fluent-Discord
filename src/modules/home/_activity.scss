@@ -1,20 +1,20 @@
-.theme-dark .nowPlayingColumn__133bf{
+.theme-dark .nowPlayingColumn_zrUwGA{
     background: transparent;
-    .container__7d20c{
+    .container_GNEh_C{
         background-color: $LayerFillColorDefault;
         border-left: 1px solid $CardStrokeColorDefault;
     }
-    .scroller__7d20c{
+    .scroller_GNEh_C{
         border: 0;
     }
 
     // Header
-    .header__7d20c{
+    .header_GNEh_C{
         @include TypeSubtitle;
     }
 
     // User data consent card
-    .card__2eab1.outer_bf1984{
+    .card__2eab1.outer_ERB-Vv{
         background-color: $LayerFillColorDefault;
         .header__2eab1,
         .defaultColor__77578 {
@@ -23,24 +23,24 @@
     }
 
     // Card
-    .wrapper__00943{
+    .wrapper_o3hXTo{
         background-color: $LayerFillColorDefault;
         border: 1px solid $CardStrokeColorDefault;
         &:hover{
             background-color: $LayerFillColorAlt;
         }
     }
-    .inset_bf1984{
+    .inset_ERB-Vv{
         background-color: $LayerFillColorDefault;
         border: 1px solid $CardStrokeColorDefault;
         border-radius: 4px;
-        .section__00943{
+        .section_o3hXTo{
             background-color: transparent;
         }
     }
 
     // Empty
-    .emptyCard__7e549{
+    .emptyCard_-7KzVR{
         background-color: $LayerFillColorDefault;
         border: 1px solid $CardStrokeColorDefault;
         align-items: baseline;

@@ -1,4 +1,4 @@
-.theme-dark .layer__960e4{
+.theme-dark .layer_Fd0FEH{
     .contentRegion__23e6b{
         background-color: $LayerFillColorDefault;
         border-top: 1px solid $CardStrokeColorDefault;
@@ -18,7 +18,7 @@
     }
 
     // Close button
-    .closeButton_c2b141{
+    .closeButton_e76OBR{
         width: 32px;
         height: 32px;
         flex: 0 0 32px;
@@ -29,7 +29,7 @@
             fill: $TextFillColorPrimary;
         }
     }
-    .keybind_c2b141{
+    .keybind_e76OBR{
         @include TypeBody;
         color: $TextFillColorPrimary;
     }
@@ -91,6 +91,6 @@
         transform: translateY(0);
     }
 }
-.animating__960e4{
+.animating_Fd0FEH{
     animation: fluent-layer-transition 250ms cubic-bezier(0,0,0,1);
 }

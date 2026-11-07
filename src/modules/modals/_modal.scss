@@ -6,15 +6,15 @@
     }
 
     // Body
-    .root__49fc1{
+    .root__KoJTP{
         background-color: $SolidBackgroundFillColorBase;
         border: 1px solid $SurfaceStrokeColorDefault;
         border-radius: 8px;
     }
 
     // Headers
-    .header__49fc1, // eg. notification settings
-    // .header__802af, // eg. change password
+    .header__KoJTP, // eg. notification settings
+    // .header_m1SX1n, // eg. change password
     // .header-1kWa4s, // eg. change username
     .header-1R3myj{ // eg. edit email
         padding: 24px;
@@ -38,13 +38,13 @@
         }
 
         // Remove divider line in notification settings
-        &.separator__49fc1{
+        &.separator__KoJTP{
             box-shadow: none;
         }
     }
 
     // Content
-    .content__49fc1{
+    .content__KoJTP{
         padding-right: 24px !important;
         padding-left: 24px;
         background-color: $LayerFillColorAlt;
@@ -57,17 +57,17 @@
     }
 
     // Footer
-    .footer__49fc1{
+    .footer__KoJTP{
         padding: 24px;
         background-color: transparent;
 
         // Remove divider line in notification settings
-        &.footerSeparator__49fc1{
+        &.footerSeparator__KoJTP{
             box-shadow: none;
         }
 
         // Add gap between buttons
-        .button__201d5{
+        .button_9OQtot{
             margin-left: 8px;
         }
     }
@@ -85,7 +85,7 @@
         display: none;
     }
     // NOTE: 2023-06-13 - Style fix for the verify email modal which uses the wrong class for the actions div
-    .headerImage_a62824 ~ div .content__49fc1{
+    .headerImage_a62824 ~ div .content__KoJTP{
         background-color: transparent;
     }
     .buttons_ce7406{

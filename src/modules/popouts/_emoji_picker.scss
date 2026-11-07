@@ -1,4 +1,4 @@
-.theme-dark .contentWrapper__08434,
+.theme-dark .contentWrapper_58b0l2,
 .theme-dark #emoji-picker-tab-panel{
     background: $MicaBackgroundFillColorBase;
     backdrop-filter: blur(16px);
@@ -6,7 +6,7 @@
     border-radius: 8px;
 }
 
-.theme-dark .contentWrapper__08434 #emoji-picker-tab-panel{
+.theme-dark .contentWrapper_58b0l2 #emoji-picker-tab-panel{
     background: transparent;
     backdrop-filter: none;
     border: 0;
@@ -15,8 +15,8 @@
 
 .theme-dark{
     // Navigation
-    .nav__08434{
-        .navButton__08434 {
+    .nav_58b0l2{
+        .navButton_58b0l2 {
             padding-left: 0;
             padding-right: 0;
             margin-left: 0;
@@ -29,7 +29,7 @@
             }
 
         }
-        .navButtonActive__08434 {
+        .navButtonActive_58b0l2 {
             background-color: transparent;
             color: $AccentTextFillColorPrimary;
             &::before{
@@ -48,12 +48,12 @@
     }
 
     // Header
-    .emojiPickerHasTabWrapper_c0e32c .header_c0e32c{
+    .emojiPickerHasTabWrapper_-sZhZn .header_-sZhZn{
         padding: 0 12px 12px;
     }
-    .header_c0e32c, // Emoji
-    .header__8ef02, // Stickers
-    .header_fed6d3{ // GIFs
+    .header_-sZhZn, // Emoji
+    .header_WSRqCO, // Stickers
+    .header_rfDq2B{ // GIFs
         background-color: transparent;
         box-shadow: none;
     }
@@ -108,12 +108,12 @@
 
     // Emoji
     // Sidebar
-    .categoryList_c0e32c{
+    .categoryList_-sZhZn{
         background-color: $SolidBackgroundFillColorBase;
     }
     // Replace emoji icons
-    .categoryItemDefaultCategory_b9ee0c{
-        &.categoryItem_b9ee0c{
+    .categoryItemDefaultCategory_ufks4w{
+        &.categoryItem_ufks4w{
             svg{
                 display: none;
             }
@@ -162,22 +162,22 @@
         }
     }
     // Info bar
-    .inspector_aeaaeb {
+    .inspector_1bDrGE {
         background-color: $SolidBackgroundFillColorSecondary;
     }
     // "Popular" badge in info bar
-    .topGuildEmojiBadge_aeaaeb{
+    .topGuildEmojiBadge_1bDrGE{
         display: none;
     }
 
     // Emoji category header
-    .header_c656ac,
-    .wrapper__14245{
+    .header_6c9R7U,
+    .wrapper_kSdzCr{
         margin: 0 -8px;
         padding: 0 16px;
         background-color: $SolidBackgroundFillColorTertiary;
         border-radius: 4px;
-        .headerLabel__14245{
+        .headerLabel_kSdzCr{
             @include TypeBodyStrong;
             color: $TextFillColorPrimary;
             text-transform: none;
@@ -185,30 +185,30 @@
     }
 
     // Colour change
-    .diversitySelectorButton_a45a2a{
+    .diversitySelectorButton_eHzdRB{
         width: 30px;
         height: 30px;
         background-color: $ControlFillColorDefault;
         border: 1px solid $ControlStrokeColorDefault;
         border-radius: 4px;
         position: relative;
-        .diversityEmojiItemImage_a45a2a{
+        .diversityEmojiItemImage_eHzdRB{
             margin: 3px;
         }
     }
     // Diversity selector in stand alone emoji popout (eg. reaction)
-    .diversitySelectorOptions_a45a2a {
+    .diversitySelectorOptions_eHzdRB {
         // top: 0;
         right: 12px;
     }
-    .diversitySelectorOptions_a45a2a {
+    .diversitySelectorOptions_eHzdRB {
         border: 1px solid $ControlStrokeColorDefault;
-        .diversityEmojiItem_a45a2a{
+        .diversityEmojiItem_eHzdRB{
             width: 30px;
             height: 30px;
             padding: 0;
         }
-        .diversityEmojiItemImage_a45a2a{
+        .diversityEmojiItemImage_eHzdRB{
             margin: 3px;
         }
     }

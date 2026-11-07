@@ -54,7 +54,7 @@
                     }
                 }
             }
-            .button__201d5{
+            .button_9OQtot{
                 display: none;
             }
         }
@@ -89,12 +89,12 @@
                 }
 
                 // Override the reveal button
-                .button__201d5.lookLink__201d5{
+                .button_9OQtot.lookLink_9OQtot{
                     min-width: unset;
                     padding: 0 0 0 4px;
                     background-color: unset;
                     border: unset;
-                    .contents__201d5{
+                    .contents_9OQtot{
                         color: $AccentLight3;
                         &:hover{
                             text-decoration: underline;
@@ -151,7 +151,7 @@
         }
     }
     // About me
-    .channelTextArea__74017{
+    .channelTextArea_2x8-Qn{
         .bioTextArea__6a919{
             height: auto;
             background-color: $ControlFillColorDefault;
@@ -160,7 +160,7 @@
             border-color: $ControlStrokeColorDefault;
             border-radius: 4px;
             // Set a static emoji icon
-            .emojiButton__04eed{
+            .emojiButton_SjG8Ug{
                 margin: 0 4px 0 0;
                 &::before{
                     content: "\E76E"; //Emoji2
@@ -168,15 +168,15 @@
                     @include FontIconFluent;
                     font-size: 16px;
                 }
-                &.emojiButtonHovered__04eed::before{
+                &.emojiButtonHovered_SjG8Ug::before{
                     color: $TextFillColorPrimary;
                 }
-                .contents__201d5{
+                .contents_9OQtot{
                     display: none;
                 }
             }
         }
-        .characterCount__795fb{
+        .characterCount_A7cPID{
             top: -24px;
             bottom: unset;
         }
@@ -184,7 +184,7 @@
 
     // Authorised apps
     // Banner
-    .formNotice_f43ba5{
+    .formNotice_LiOD7I{
         background-color: $SystemFillColorAttentionBackground;
         border: 1px solid $CardStrokeColorDefault;
         .formText_ddd181{
@@ -304,8 +304,8 @@
     // Family Centre
     &#family-center-tab{
         // Activity tab boxes
-        .container__5dbf8,
-        .container__8cc9a,
+        .container_IQWzzZ,
+        .container_lb1Q8G,
         .container__5b321,
         .box_d9914b {
             background-color: $SystemFillColorAttentionBackground;
@@ -314,7 +314,7 @@
             box-shadow: none;
         }
         // Make the layout full-width
-        .max-width__8e680,
+        .max-width_1qoVzk,
         .max-width__5b321{
             max-width: unset;
         }
@@ -343,7 +343,7 @@
     // Billing
     &#billing-tab{
         // Only apply to the main header, not the secondary "Transaction History" header
-        .title_b717a1 .flex__7c0ba{
+        .title_b717a1 .flex_hkRWAH{
             margin-bottom: 32px;
             @include TypeTitle;
             // Remove lock icon
@@ -371,19 +371,19 @@
         color: $SystemFillColorCritical;
     }
     // Nitro themes
-    .premiumFeatureBorder__65c15{
+    .premiumFeatureBorder_qIotUB{
         margin: 0;
         background: transparent;
         border: 0;
-        .headings__67a11{
-            .title__67a11::after{
+        .headings_QF5mJe{
+            .title_QF5mJe::after{
                 content: "Fluent Discord - Colour themes are not supported";
                 padding-left: 4px;
                 color: $SystemFillColorCritical;
             }
         }
     }
-    .presets_a00e6e:has(.appIconSelectionContainer__8a3d7){
+    .presets_a00e6e:has(.appIconSelectionContainer_jWcVMn){
         &::after{
         content: "Fluent Discord - In-app Icon is not supported. Select the \"Default\" option.";
         padding-left: 4px;
@@ -439,7 +439,7 @@
         }
 
         // Align the Add keybind button with middle of warning
-        ~.flexChild__7c0ba{
+        ~.flexChild_hkRWAH{
             align-self: center;
         }
     }
@@ -509,7 +509,7 @@
                 color: $TextFillColorPrimary;
                 line-height: 32px;
             }
-            .button__201d5{
+            .button_9OQtot{
                 float: right;
             }
         }
@@ -540,13 +540,13 @@
         // Last played
         .lastPlayed_cc46f0{
             color: $TextFillColorSecondary;
-            .default__0263c{
+            .default_Dq3ch1{
                 @include TypeCaption;
                 strong{
                     font-weight: normal;
                 }
             }
-            .hovered__0263c{
+            .hovered_Dq3ch1{
                 @include FontMonospace;
                 @include TypeCaption;
             }

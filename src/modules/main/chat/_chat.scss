@@ -1,5 +1,5 @@
 .theme-dark{
-    .chat_f75fb0{
+    .chat_z_gUBg{
         background: transparent;
         border-top: 0;
         &[data-has-border=true]{
@@ -7,46 +7,46 @@
         }
     }
 
-    .content_f75fb0{
+    .content_z_gUBg{
         background-color: $LayerFillColorAlt;
         border-left: 1px solid $CardStrokeColorDefault;
         border-radius: 8px 0 0 0;
     }
-    .chatContent_f75fb0{
+    .chatContent_z_gUBg{
         background-color: transparent;
     }
 
     // New/old messages bars
-    .barBase__0f481{
+    .barBase_j9Vvzj{
         margin: 0 auto;
         max-width: 598px;
         min-height: 32px;
         border: 1px solid $CardStrokeColorDefault;
         box-shadow: none;
         border-radius: 4px;
-        .barButtonMain__0f481{
+        .barButtonMain_j9Vvzj{
             @include TypeBody;
         }
-        .barButtonAlt__0f481{
+        .barButtonAlt_j9Vvzj{
             display: none;
         }
     }
     // New messages bar
-    .newMessagesBar__0f481{
+    .newMessagesBar_j9Vvzj{
         top: 8px;
         background-color: $AccentLight1;
-        .barButtonBase__0f481{
+        .barButtonBase_j9Vvzj{
             color: $TextOnAccentFillColorPrimary;
         }
     }
     // Old messages bar
-    .jumpToPresentBar__0f481{
+    .jumpToPresentBar_j9Vvzj{
         bottom: 8px;
         padding-bottom: 0;
         background-color: $CardStrokeColorDefaultSolid;
     }
     // Errored bar
-    .messagesErrorBar__0f481{
+    .messagesErrorBar_j9Vvzj{
         bottom: 8px;
         background-color: $SystemFillColorCriticalBackground;
         border-color: $CardStrokeColorDefault;
@@ -100,17 +100,17 @@
     }
 
     // Divider
-    .divider__908e2{
+    .divider_4TfzT5{
         justify-content: flex-end;
         border-color: $DividerStrokeColorDefault;
-        .content__908e2,
-        .unreadPill__908e2{
+        .content_4TfzT5,
+        .unreadPill_4TfzT5{
             padding: 2px 8px;
             background-color: $SystemFillColorSolidNeutralBackground;
             color: $TextFillColorPrimary;
             @include TypeCaption;
         }
-        .unreadPill__908e2{
+        .unreadPill_4TfzT5{
             height: unset;
             top: -1px;
             background-color: $SystemFillColorCriticalBackground;
@@ -121,13 +121,13 @@
                 display: none;
             }
         }
-        &.isUnread__908e2{
+        &.isUnread_4TfzT5{
             // NOTE: 2021-08-29 - The border should technically be SystemFillColorCriticalBackground, but is barely visisble, so using the text fill instead.
             border-color: $SystemFillColorCritical;
-            .content__908e2{
+            .content_4TfzT5{
                 border-radius: 8px 0 0 8px;
             }
-            .unreadPill__908e2{
+            .unreadPill_4TfzT5{
                 position: relative;
             }
         }
@@ -138,12 +138,12 @@
     }
 
     // inline code
-    .markup__75297 code{
+    .markup_ku1OHH code{
         background-color: $LayerFillColorDefault;
     }
 
     // Remove avatar borders/decorations
-    .avatarDecoration_c19a55{
+    .avatarDecoration_2i8Bfm{
         display: var(--fluent-show-nitro-decorations);
     }
 
@@ -190,7 +190,7 @@
 
     // Embedded image
     // Remove AI slop buttons
-    .imageContainer__0f481{
+    .imageContainer_j9Vvzj{
         .hoverButton__06ab4[aria-label="Edit Image with Apps"]{
             display: none;
         }
@@ -198,7 +198,7 @@
 
     // Loading chat content
     .wrapper_d852db, // Loading container
-    .wrapper_fc8177{ // Chat line item
+    .wrapper_oITdBA{ // Chat line item
         background: transparent;
     }
 

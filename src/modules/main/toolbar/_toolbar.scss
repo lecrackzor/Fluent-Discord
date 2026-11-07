@@ -1,28 +1,28 @@
-.theme-dark .title_f75fb0, // Normal toolbar
-.theme-dark .container__9293f{ // Browse channels toolbar
+.theme-dark .title_z_gUBg, // Normal toolbar
+.theme-dark .container_ybUK7Z{ // Browse channels toolbar
     padding: 0 0 0 8px;
-    &.themed__9293f{
+    &.themed_ybUK7Z{
         background-color: transparent;
         border: 0;
     }
     // Channel & MOTD
     // Re-colour channel symbol
-    .children__9293f{
+    .children_ybUK7Z{
         // Gradient at end of MOTD field
         &::after{
             display: none;
         }
-        .iconWrapper__9293f svg{
+        .iconWrapper_ybUK7Z svg{
             color: $TextFillColorPrimary;
         }
     }
     // Channel name
-    .title__9293f{
+    .title_ybUK7Z{
         @include TypeBodyStrong
     }
 
     // MOTD
-    .dot__9293f{
+    .dot_ybUK7Z{
         color: $TextFillColorDisabled;
     }
     .topic__6ec1a{
@@ -31,13 +31,13 @@
     }
 
     // Add some margin to the caret when in fullscreen thread view
-    .caret__9293f{
+    .caret_ybUK7Z{
         margin-right: 8px;
     }
 }
 
 // Toolbar
-.theme-dark .toolbar__9293f{
+.theme-dark .toolbar_ybUK7Z{
     gap: 4px;
     margin-right: 4px;
     // Using these selectors so there are fewer conflicts in the voice screen
@@ -59,7 +59,7 @@
         }
 
         // Selected
-        &.selected__9293f{
+        &.selected_ybUK7Z{
             background-color: $AccentFillColorSecondary;
             &::before{
                 color: $TextOnAccentFillColorPrimary;
@@ -79,7 +79,7 @@
         left: 38px;
         @include TypeCaption;
     }
-    .iconBadge__9293f{
+    .iconBadge_ybUK7Z{
         width: 16px;
         height: 3px;
         right: 22px;
@@ -91,8 +91,8 @@
 }
 
 // Icon replacements
-html[lang^="en-"].theme-dark .toolbar__9293f{
-    .iconWrapper__9293f{
+html[lang^="en-"].theme-dark .toolbar_ybUK7Z{
+    .iconWrapper_ybUK7Z{
         &::before{
             @include FontIconFluent;
             width: 60px;
@@ -103,7 +103,7 @@ html[lang^="en-"].theme-dark .toolbar__9293f{
             display: block;
         }
         // Remove default icon
-        .icon__9293f,
+        .icon_ybUK7Z,
         .controlIcon-35oS15{
             display: none;
         }
