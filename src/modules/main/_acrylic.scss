@@ -2,8 +2,6 @@
 .theme-dark{
     // These panes paint their own opaque fill. The picture lives on .bg,
     // so the panes have to be transparent for it to show through.
-    .app_QbT-Jy,
-    .base_pog62O,
     .content_pog62O,
     .page_pog62O,
     .layer_Fd0FEH,
@@ -22,14 +20,21 @@
         background-color: transparent !important;
     }
 
-    // The picture has to be on the grid itself. The old background element
-    // sits behind the window fill, so the channel list and chat never showed it.
-    .base_pog62O{
-        background-image: var(--fluent-acrylic-background) !important;
-        background-size: cover !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
+    // Opaque color stops the Windows desktop showing through Legcord's mica window.
+    // The blurred theme picture sits on top of that color and behind the UI.
+    .app_QbT-Jy{
+        background-color: #202020 !important;
+        background-image: none !important;
         &::before{
+            content: "";
+            position: absolute;
+            inset: -40px;
+            z-index: 0;
+            pointer-events: none;
+            background: var(--fluent-acrylic-background) center / cover no-repeat;
+            filter: #{"saturate(var(--fluent-acrylic-background-saturate))"} blur(var(--fluent-acrylic-background-blur));
+        }
+        &::after{
             content: "";
             position: absolute;
             inset: 0;
@@ -38,9 +43,7 @@
             background: rgba(32, 32, 32, var(--fluent-acrylic-background-dimness));
         }
     }
-    .sidebar_pog62O,
-    .sidebarList_pog62O,
-    .page_pog62O{
+    .app_QbT-Jy > *{
         position: relative;
         z-index: 1;
     }
