@@ -1,7 +1,11 @@
 .theme-dark .chat_z_gUBg .search_bWCaDq{
+    flex: 1 1 244px;
+    width: 244px;
+    max-width: 244px;
     margin: 0 4px 0 0;
     .searchBar_i16Ad0{
-        width: 60px;
+        width: 100%;
+        min-width: 160px;
         height: 32px;
         background-color: transparent;
         background-position: center;
@@ -9,38 +13,21 @@
         background-size: 20px;
         border: 0;
         border-radius: 4px;
-        cursor: pointer;
-        transition: background-color $AnimationFadeInOut,
-                    width $AnimationFastInvokeMedium;
+        cursor: text;
+        transition: background-color $AnimationFadeInOut;
         &:hover{
             background-color: $ControlFillColorSecondary;
             transition: background-color $AnimationFadeInOut;
-        }
-        .public-DraftEditorPlaceholder-root,
-        .icon_i16Ad0{
-            display: none;
         }
         .icon_i16Ad0{
             height: 24px;
         }
     }
 
-    // Icon when not active
-    .search_i16Ad0:not(.focused_i16Ad0):not(.open_i16Ad0)::before{
-        content: "\e721"; // Search
-        width: 60px;
-        font-size: 16px;
-        @include FontIconFluent;
-        text-align: center;
-        line-height: 32px;
-        vertical-align: middle;
-        position: absolute;
-    }
-
     .search_i16Ad0.focused_i16Ad0 .searchBar_i16Ad0,
     .search_i16Ad0.open_i16Ad0 .searchBar_i16Ad0,
     .search_i16Ad0.popout-open .searchBar_i16Ad0{
-        width: 232px;
+        width: 100%;
         height: 32px;
         margin: 0;
         background-color: $ControlFillColorDefault;
