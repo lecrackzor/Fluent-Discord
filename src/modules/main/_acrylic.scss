@@ -1,16 +1,20 @@
 // Main UI transparency
 .theme-dark{
-    .sidebar_pog62O, // channels
-    .container__2637a{ // channels
-        background-color: transparent;
-    }
-
-    // Settings transparency
+    // These panes paint their own opaque fill. The picture lives on .bg,
+    // so the panes have to be transparent for it to show through.
+    .app_QbT-Jy,
     .layer_Fd0FEH,
-    .standardSidebarView__23e6b,
-    .sidebarRegionScroller__23e6b,
-    .contentRegion__23e6b,
-    .contentRegionScroller__23e6b{
+    .sidebar_pog62O,
+    .scroller_Bce46W,
+    .chat_z_gUBg,
+    .chatContent_z_gUBg,
+    .guildSidebar_iar92T,
+    .containerSidenav_XtY2mm,
+    .contentPanel_XtY2mm,
+    .userSettingsContentPanel_XtY2mm,
+    .container_86es0b,
+    .members_86es0b,
+    .member_86es0b{
         background: transparent;
     }
 
@@ -23,8 +27,10 @@
     //    See: https://github.com/sass/libsass/issues/151#issuecomment-54477631
     .bg_Fd0FEH{
         margin-top: -10px; // Hides the black bar at top of titlebar (ie. grabber)
-        background: var(--fluent-acrylic-background);
-        background-size: cover;
+        background-image: var(--fluent-acrylic-background) !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
         filter: #{"saturate(var(--fluent-acrylic-background-saturate))"} blur(var(--fluent-acrylic-background-blur));
         &::before{
             content: "";

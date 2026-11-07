@@ -6,6 +6,7 @@
     }
 
     .channelTextArea_2x8-Qn{
+        --custom-channel-textarea-text-area-height: 44px;
         margin-bottom: 8px;
         background: $ControlFillColorDefault;
         border: 1px solid $ControlStrokeColorDefault;
@@ -34,14 +35,10 @@
         padding-left: 0;
     }
 
-    // Text input
-    .textArea_2x8-Qn{
-        height: 48px;
-        min-height: 48px;
-    }
+    // Text input. Height comes from --custom-channel-textarea-text-area-height
+    // so the placeholder stays centered. A fixed height plus extra padding
+    // stretched the box and pushed the placeholder off center.
     .slateTextArea_q99V_-{
-        min-height: 48px;
-        padding: 14px 0;
         color: $TextFillColorPrimary;
         &.placeholder_SHcSVi {
             color: $TextFillColorSecondary;
@@ -55,7 +52,7 @@
     .attachButton_2x8-Qn {
         width: 32px;
         height: 32px;
-        margin: 8px 0 8px 8px;
+        margin: 0 0 0 8px;
         border: 1px solid transparent;
         border-radius: 2px;
         &::before{
@@ -88,7 +85,6 @@
 
     // Button group within chatbox
     .buttons_2x8-Qn{
-        height: 48px;
         gap: 4px;
         // Remove the gift button
         // Nesting is updated *very* frequently, so try to catch as many configurations as possible
@@ -227,9 +223,8 @@
             color: $TextFillColorSecondary;
             @include TypeBody;
         }
-        // Fixes a scrollbar appearing
         .slateTextArea_q99V_-{
-            padding: 15px 0;
+            overflow: hidden;
         }
     }
     // Announce channel follow

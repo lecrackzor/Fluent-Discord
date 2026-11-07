@@ -163,82 +163,18 @@
         font-weight: 400;
     }
 
-    // Folders
-    .folderGroup_RTMSuZ{
-        width: 52px;
-    }
-    .folderGroupBackground_RTMSuZ{
-        width: 44px;
-        left: 8px;
-        border-radius: 4px;
-        border: 0;
-    }
-    .hiddenVisually_FX8kaC, .folderPreviewWrapper_RTMSuZ{
-        // width: 44px;
-        // height: 44px;
-        border-radius: 4px;
-    }
-
-    // Open folder
-    .folderHeader_RTMSuZ{
+    // Closed folder face. The preview of server icons is a separate layer now,
+    // so the glyph only replaces the folder icon and leaves that preview alone.
+    .folderIcon_RTMSuZ{
+        svg{
+            display: none;
+        }
         &::before{
             content: "\E8B7"; // Folder Open
             @include FontIconFluent;
             color: $TextOnAccentFillColorPrimary;
-            position: absolute;
-            font-size: 32px;
+            font-size: 20px;
         }
-        &::after{
-            content: "\E8D5"; // Folder Fill
-            @include FontIconFluent;
-            font-size: 32px;
-        }
-        svg{
-            display: none;
-        }
-    }
-
-    // Closed folder
-    .folderHeader_RTMSuZ{
-        .wrapper_hqZPsU{
-            width: 44px !important; // Override inline
-            height: 44px !important; // Override inline
-        }
-        // Fix alignment
-        svg{
-            left: 2px;
-        }
-        // Remove round mask
-        foreignobject{
-            // mask: none;
-        }
-    }
-    .folderPreviewWrapper_RTMSuZ{
-        // width: 44px;
-        // height: 44px;
-    }
-    .folderPreview_RTMSuZ{
-        width: 44px;
-        height: 44px;
-        gap: 1px;
-    }
-    .folderPreviewGuildIcon_RTMSuZ{
-        width: 18px;
-        height: 18px;
-        border-radius: 50% !important; // Override inline
-    }
-
-    // Fix folder icon height when folder is expanded
-    .isExpanded_RTMSuZ .folderHeader_RTMSuZ{
-        margin-bottom: 0;
-        .wrapper_hqZPsU{
-            width: 44px !important; // Override inline
-            height: 44px !important; // Override inline
-        }
-    }
-    // Remove the background behind folder icon when hovering
-    .hiddenVisually_FX8kaC.hover__48112 .expandedFolderIconWrapper__48112{
-        background-color: transparent;
     }
 
     // Unread notification bars
